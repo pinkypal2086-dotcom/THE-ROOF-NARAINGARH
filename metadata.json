@@ -1,0 +1,6 @@
+{
+  "name": "The Roof",
+  "description": "Premium pure-vegetarian rooftop restaurant and sweets in Naraingarh, Haryana, offering North Indian, South Indian, Chinese, and Fast Food with a luxurious warm gold atmosphere.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

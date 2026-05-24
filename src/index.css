@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-brand: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-gold-50: #fbf8f1;
+  --color-gold-100: #f5edda;
+  --color-gold-200: #ebd6a9;
+  --color-gold-300: #deb874;
+  --color-gold-400: #d19a48;
+  --color-gold-500: #c27d2c;
+  --color-gold-600: #a86221;
+  --color-gold-700: #87471c;
+  --color-gold-800: #693418;
+  --color-gold-900: #4f2614;
+
+  --color-charcoal-50: #f4f6f7;
+  --color-charcoal-100: #e2e7e9;
+  --color-charcoal-200: #c6d0d5;
+  --color-charcoal-300: #9cb1bc;
+  --color-charcoal-400: #6d8b9b;
+  --color-charcoal-500: #516f7f;
+  --color-charcoal-600: #3f5866;
+  --color-charcoal-700: #354954;
+  --color-charcoal-800: #1a252b;
+  --color-charcoal-900: #10181d;
+  --color-charcoal-950: #080d11;
+}
+
+/* Base custom styles for glassmorphism and smooth transition scroll styling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-charcoal-950);
+  color: var(--color-charcoal-100);
+  font-family: var(--font-sans);
+}
+
+.glass-panel {
+  background: rgba(26, 37, 43, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(222, 184, 116, 0.15);
+}
+
+.glass-panel-light {
+  background: rgba(245, 237, 218, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(194, 125, 44, 0.2);
+}
+
+.gold-glow {
+  text-shadow: 0 0 12px rgba(222, 184, 116, 0.35);
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(222, 184, 116, 0.6);
+  box-shadow: 0 0 15px rgba(222, 184, 116, 0.25);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-charcoal-950);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-800);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-500);
+}
